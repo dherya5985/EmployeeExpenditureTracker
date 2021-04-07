@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Main Menu"
+            android:icon="@drawable/ic_baseline_home_24"/>
+        <item
+            android:id="@+id/nav_addexp"
+            android:title="Add Expenditures"
+            android:icon="@drawable/ic_baseline_add_24"/>
+        <item
+            android:id="@+id/nav_viewexp"
+            android:title="View Expensditures"
+            android:icon="@drawable/ic_baseline_insert_chart_24"/>
+
+    </group>
+
+
+</menu>

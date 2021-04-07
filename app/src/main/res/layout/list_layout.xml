@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="313dp"
+        android:layout_margin="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/papers_co_sa52_blurred_white_blur_wallpaper_iphone_x_wallpaper"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/listexpamt"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:fontFamily="@font/cabin"
+                android:gravity="center|left"
+                android:text="wraadasdasd"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/listexploc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/listexploc"
+                app:layout_constraintTop_toBottomOf="@+id/listexpname" />
+
+            <TextView
+                android:id="@+id/listexpname"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:fontFamily="@font/cabin"
+                android:gravity="center|left"
+                android:text="wraadasdasd"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/listexpamt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/listexpamt"
+                app:layout_constraintTop_toBottomOf="@+id/listempid" />
+
+            <TextView
+                android:id="@+id/listempid"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:fontFamily="@font/cabin"
+                android:gravity="center|left"
+                android:text="wraadasdasd"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/listexpname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/listexpname"
+                app:layout_constraintTop_toBottomOf="@+id/listexpid" />
+
+            <TextView
+                android:id="@+id/listexploc"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:fontFamily="@font/cabin"
+                android:gravity="center|left"
+                android:text="wraadasdasd"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/listexpreim"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/listexpreim"
+                app:layout_constraintTop_toBottomOf="@+id/listexpamt" />
+
+            <TextView
+                android:id="@+id/listexpdate"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="6dp"
+                android:fontFamily="@font/cabin"
+                android:gravity="center|left"
+                android:text="wraadasdasd"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView25"
+                app:layout_constraintTop_toBottomOf="@+id/listexptime" />
+
+            <TextView
+                android:id="@+id/listexpid"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:fontFamily="@font/cabin"
+                android:gravity="center|left"
+                android:text="wraadasdasd"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/listempid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/listempid"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/listexptime"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:fontFamily="@font/cabin"
+                android:gravity="center|left"
+                android:text="wraadasdasd"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/listexpdate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/listexpdate"
+                app:layout_constraintTop_toBottomOf="@+id/listexpreim" />
+
+            <TextView
+                android:id="@+id/listexpreim"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:fontFamily="@font/cabin"
+                android:gravity="center|left"
+                android:text="wraadasdasd"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/listexptime"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/listexptime"
+                app:layout_constraintTop_toBottomOf="@+id/listexploc" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="6dp"
+                android:fontFamily="@font/cabin_bold"
+                android:gravity="center"
+                android:text="Expense ID :"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView19"
+                app:layout_constraintEnd_toStartOf="@+id/listexpid"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="6dp"
+                android:fontFamily="@font/cabin_bold"
+                android:gravity="center"
+                android:text="Expense Location :"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView23"
+                app:layout_constraintEnd_toStartOf="@+id/listexploc"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView23"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="6dp"
+                android:fontFamily="@font/cabin_bold"
+                android:gravity="center"
+                android:text="Time Of Expense :"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView25"
+                app:layout_constraintEnd_toStartOf="@+id/listexptime"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView25"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="6dp"
+                android:fontFamily="@font/cabin_bold"
+                android:gravity="center"
+                android:text="Expense Reimbursability :"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView24"
+                app:layout_constraintEnd_toStartOf="@+id/listexpreim"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView24"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="6dp"
+                android:fontFamily="@font/cabin_bold"
+                android:gravity="center"
+                android:text="Expense Amount :"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView22"
+                app:layout_constraintEnd_toStartOf="@+id/listexpamt"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView22"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="6dp"
+                android:fontFamily="@font/cabin_bold"
+                android:gravity="center"
+                android:text="Date Of Expense :"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/listexpdate"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="6dp"
+                android:fontFamily="@font/cabin_bold"
+                android:gravity="center"
+                android:text="Employee ID :"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView20"
+                app:layout_constraintEnd_toStartOf="@+id/listempid"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="6dp"
+                android:fontFamily="@font/cabin_bold"
+                android:gravity="center"
+                android:text="Expense Name :"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView21"
+                app:layout_constraintEnd_toStartOf="@+id/listexpname"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

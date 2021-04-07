@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/papers_co_sa52_blurred_white_blur_wallpaper_iphone_x_wallpaper"
+    tools:context=".Addexpense">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/titleadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/cabin_bold"
+            android:text="Add Expenditures"
+            android:textColor="@color/grey"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toTopOf="@+id/expenseid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/expenseid"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:hint="Expenditure ID"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            app:layout_constraintBottom_toTopOf="@+id/nameofexpense"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/nameofexpense"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Name of the Expenditure"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            app:layout_constraintBottom_toTopOf="@+id/locationofexpense"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expenseid" />
+
+        <EditText
+            android:id="@+id/locationofexpense"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Location Of Expenditure"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            app:layout_constraintBottom_toTopOf="@+id/dateofexpense"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameofexpense" />
+
+        <EditText
+            android:id="@+id/dateofexpense"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Date Of Expenditure"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            app:layout_constraintBottom_toTopOf="@+id/timeofexpense"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationofexpense" />
+
+        <EditText
+            android:id="@+id/timeofexpense"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Time Of Expenditure"
+            android:inputType="time"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            app:layout_constraintBottom_toTopOf="@+id/amountofexpenditure"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateofexpense" />
+
+        <EditText
+            android:id="@+id/amountofexpenditure"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:hint="Amount Of Expenditure"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            app:layout_constraintBottom_toTopOf="@+id/reimbursablecheck"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeofexpense" />
+
+        <CheckBox
+            android:id="@+id/reimbursablecheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="551dp"
+            android:layout_marginBottom="132dp"
+            android:text="Reimbursable Expense"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonexpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="11dp"
+            android:text="Add Expense"
+            android:textColor="@color/grey"
+            android:textSize="18dp"
+            app:backgroundTint="#7EB6B1"
+            app:layout_constraintBottom_toTopOf="@+id/progressBar3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reimbursablecheck" />
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="184dp"
+            android:layout_marginLeft="184dp"
+            android:layout_marginEnd="179dp"
+            android:layout_marginRight="179dp"
+            android:layout_marginBottom="14dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonexpense" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_toolbar" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/papers_co_sa52_blurred_white_blur_wallpaper_iphone_x_wallpaper">
+
+        <include layout="@layout/main_nav_drawer" />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
